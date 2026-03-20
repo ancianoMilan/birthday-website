@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="cheerAudio" src="/audio/cheer.mp3" preload="auto"></audio>
+  <div class="container">
+
+  <!-- LANDING PAGE -->
+  <div class="landingPage-section" id="landingPage">
+    <button class="top-btn">LET’S CELEBRATE 🎉</button>
+
+    <h1>Happy</h1>
+    <div class="gradient-text">Birthday!</div>
+
+    <p>
+      Wishing you a day filled with happiness, laughter, and all the things
+      that make you smile. You deserve the absolute best today!
+    </p>
+
+    <button class="cta" id="confettiBtn">
+      🎉 Launch Confetti Cannon
+    </button>
+  </div>
+
+  <!-- MEMORIES PAGE -->
+    <div class="memories-section hidden" id="memoriesSection">
+        <h2>Our Memories 💖</h2>
+        <h3>You are the best thing that ever happened to me.</h3>
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="/images/image1.jpg">
+                <img src="/images/image2.jpg">
+                <img src="/images/image3.jpg">
+                <img src="/images/image4.jpg">
+                <img src="/images/image5.jpg">
+                <img src="/images/image6.jpg">
+                <img src="/images/image7.jpg">
+                <img src="/images/image8.jpg">
+                <img src="/images/image8.jpg">
+                <img src="/images/image9.jpg">
+                <img src="/images/image10.jpg">
+                <!-- duplicate for smooth loop -->
+                <img src="/images/image1.jpg">
+                <img src="/images/image2.jpg">
+                <img src="/images/image3.jpg">
+                <img src="/images/image4.jpg">
+                <img src="/images/image5.jpg">
+                <img src="/images/image6.jpg">
+                <img src="/images/image7.jpg">
+                <img src="/images/image8.jpg">
+                <img src="/images/image8.jpg">
+                <img src="/images/image9.jpg">
+                <img src="/images/image10.jpg">
+            </div>
+        </div>
+        <div>
+            <button>Next</button>
+        </div>
+    </div>
+
+    <!-- LETTER + BALLOON SECTION -->
+    <div class="letter-balloon-section hidden" id="letterBalloonSection">
+        <div class="grid-container">
+            <div class="letter">
+                <h2>My Dearest</h2>
+                <p>
+                    I just want you to know how much you mean to me. Every day with you is
+                    a blessing, and I cherish every memory we’ve created together.
+                    I'm sorry if sometimes I hurt your feelings, I never meant to.
+                    Thank you for being my companion in life, my smile, and my joy.
+                    I will be with you till my last breath. I will never leave your side.
+                    Through ups and downs, partner. As long as I am alive, you will never be alone.
+                    I love you so much, my donut.💖
+                </p>
+            </div>
+            <div class="balloon-game">
+                <h2>Pop the Balloons 🎈</h2>
+                <div class="balloon-area" id="balloonArea">
+                    <!-- Balloons will be generated here via JS -->
+                </div>
+            </div>
+        </div>
+       
+        <div>
+            <button>Next</button>
+        </div>
+    </div>
+
+    <!-- FINAL CAKE SECTION -->
+    <div class="cake-section hidden" id="cakeSection">
+        <div class="cake-container">
+            <h2>Make a Wish!</h2>
+            <div class="cake" id="cake">
+                <div class="candles">
+                    <div class="candle"></div>
+                    <div class="candle"></div>
+                    <div class="candle"></div>
+                </div>
+                <div class="cake-image"><img src="/images/cake.jpg" alt=""></div>
+                <!--<div class="cake-base"></div>-->
+            </div>
+        </div>
+        <div class="cards-area" id="cardsArea">
+            <!-- 5 cards will appear here after cake click -->
+        </div>
+    </div>
+
+</div>
+  </div>
+
+  <!-- JS -->
+  <script src="index.js"></script>
+</body>
+</html>
